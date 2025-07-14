@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cyber Noob</title>
+    <link>https://kappa710.github.io/prova/</link>
+    <description>Recent content on Cyber Noob</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en-us</language>
+    <atom:link href="https://kappa710.github.io/prova/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/cloud/backup-vs-disaster-recovery-vs-b.-continuity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/cloud/backup-vs-disaster-recovery-vs-b.-continuity/</guid>
+      <description>&lt;p&gt;backup = copia dei dati
+disaster and recovery = a fronte di disastro come cerco di ripristinare situazione prima di disastro
+si testa semestralmente
+(non è detto che se ho fatto backup -&amp;gt;)&lt;/p&gt;
+&lt;p&gt;b. continuity = ho bisogno di sistemi in parallelo (se uno va giu , altri devono prendere)
+RTO e RP0 = 0&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/cloud/cloud-computing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/cloud/cloud-computing/</guid>
+      <description>&lt;p&gt;on premise = tutto fatto da noi
+distribuzione dei servizi di calcolo
+internet (collegarsi in maniera efficace)
+abilitatore innovazione , risorse flessbili , economia di scala
+3 pillar computazione : cpu , ram , disco&lt;/p&gt;
+&lt;h3 id=&#34;tipologie-cloud&#34;&gt;TIPOLOGIE CLOUD&lt;/h3&gt;
+&lt;h5 id=&#34;cloud-pubblico&#34;&gt;CLOUD PUBBLICO&lt;/h5&gt;
+&lt;p&gt;servizi di calcolo distribuiti su sistemi fuori da sistemi perimetro (infrastruttura) aziendale (internet ma tramite vpn)&lt;/p&gt;
+&lt;h5 id=&#34;cloud-privato&#34;&gt;CLOUD PRIVATO&lt;/h5&gt;
+&lt;p&gt;distribuzione calcolo in perimetro specifico ,protetto verso esterno (manca internet)&lt;/p&gt;
+&lt;h5 id=&#34;cloud-ibrido&#34;&gt;CLOUD IBRIDO&lt;/h5&gt;
+&lt;p&gt;mix cloud privato e publico&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/cloud/migrazione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/cloud/migrazione/</guid>
+      <description>&lt;p&gt;dipende da come fatte applicazioni cloud native (se containerizzazione)? li rendo subito cloud native oppure faccio prima migrazione poi approccio cloud(ritardo innovativo e progettuale)&lt;/p&gt;
+&lt;p&gt;strada consigliata oggi   on premise -&amp;gt; Iaas -&amp;gt; uso container
+migrazioni -&amp;gt; Rehost (Iaas) , Replatform (PaaS) , Repurchase (SaaS) , Refactor (Cloud Native)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/ctf/steganography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/ctf/steganography/</guid>
+      <description>&lt;p&gt;cose da usare&lt;/p&gt;
+&lt;h2 id=&#34;strings&#34;&gt;STRINGS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;strings nome_file | less&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;stegsolve&#34;&gt;STEGSOLVE&lt;/h2&gt;
+&lt;p&gt;scaricalo e preparalo per essere eseguito
+&lt;code&gt;wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar&lt;/code&gt;
+&lt;code&gt;chmod +x stegsolve.jar&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;per eseguirlo
+&lt;code&gt;java -jar stegsolve.jar&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;poi da li apri file&lt;/p&gt;
+&lt;h4 id=&#34;esempio-uso&#34;&gt;Esempio uso&lt;/h4&gt;
+&lt;p&gt;vai su analys -&amp;gt; extract data -&amp;gt; inizia selezionando combinazioni di layer 7 li si trovano le robe&lt;/p&gt;
+&lt;h2 id=&#34;exiftool&#34;&gt;EXIFTOOL&lt;/h2&gt;
+&lt;p&gt;prima forse devi installarlo
+exiftool nome_file&lt;/p&gt;
+&lt;h2 id=&#34;zsteg&#34;&gt;ZSTEG&lt;/h2&gt;
+&lt;p&gt;per installarlo
+gem install zsteg&lt;/p&gt;
+&lt;p&gt;per usarlo
+zsteg nomfe_fle&lt;/p&gt;
+&lt;h2 id=&#34;binwalk&#34;&gt;BINWALK&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/architettura-postgres/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/architettura-postgres/</guid>
+      <description>&lt;p&gt;avvio server -&amp;gt; avvio istanza di postgres -&amp;gt; postmaster&lt;/p&gt;
+&lt;p&gt;POSTMASTER processo principale che gestisce il server e processi backend
+postmaster funge da superivosore del processo
+funga da listener
+postmaster autenticare connessione , si crea processo backend per ogni connessione
+client puo averere piu connessioni
+processi di sistema . autovacuum ,writer &amp;hellip;..&lt;/p&gt;
+&lt;p&gt;SHARED MEMORY dati temporaneii ( SHARED BUFFERS , WAL BUFFERS , PROCESS ARREY)
+esempio uso shared memory modifico dati con query rimangano nella shared memory cosi se un altro utente accede li prende dalla shared memory e poi dopo vengono scritti sul dischi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/backup-e-ripristinio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/backup-e-ripristinio/</guid>
+      <description>&lt;p&gt;backup full
+backup incrementale copia le ultime modifiche fatte
+backup differenziale copia le ultime cose aggiunte&lt;/p&gt;
+&lt;h3 id=&#34;backup-logico&#34;&gt;backup logico&lt;/h3&gt;
+&lt;p&gt;della struttura&lt;/p&gt;
+&lt;h3 id=&#34;backup-fisico&#34;&gt;backup fisico&lt;/h3&gt;
+&lt;p&gt;della directory dove salvato i dati&lt;/p&gt;
+&lt;h2 id=&#34;continuos-archiving-e-pitr&#34;&gt;continuos archiving e PITR&lt;/h2&gt;
+&lt;p&gt;backup fisici + log delle transazioni
+non bisogna fare noi il backup , lo fai in modo automatico&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;archive_mode = on
+arcive_command=&amp;#39;cp %p /path_to_archive/%f&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;ripristino&#34;&gt;RIPRISTINO&lt;/h2&gt;
+&lt;p&gt;FERMARE SERVER POSTGRESQL
+RIPRISTARE IL BACKUP FISICO NELLA DIRECTORY DATI
+COPIARE IL LOG&lt;/p&gt;
+&lt;h2 id=&#34;restore&#34;&gt;RESTORE&lt;/h2&gt;
+&lt;p&gt;copia da archivio secondario e ripristino nella posizione originale&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/cluster/</guid>
+      <description>&lt;p&gt;cluster formato da uno o piu database , ogni database scomposto in uno o piu schema che ha sua volta contiene uno o piu ogetti(tabelle , trigger ,indici ,funzioni)
+ogni database completamente isolato dall altro&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/introduzione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/introduzione/</guid>
+      <description>&lt;p&gt;Sistema informatico
+il focus è sempre gestione (memorizzati , ricercati , modificati) dei DATI
+e sul fatto che ogni sistema informativo comprende raccolte di informazioni di tipo omogeneo&lt;/p&gt;
+&lt;p&gt;GERARCHIA&lt;/p&gt;
+&lt;p&gt;APPLICAZIONI
+SCHEMA (informazioni organizzazione dato)
+BASE DATI
+HARDWARE E SOFTWARE&lt;/p&gt;
+&lt;p&gt;DATO VS INFORMAZIONE
+rappresentazione oggettiva e non interpretata della realta , informazione interpretazione (risultato elaborazione dei dati)&lt;/p&gt;
+&lt;p&gt;esempio
+50 (dato)  e  50 limite velocita (informazione)&lt;/p&gt;
+&lt;p&gt;DATABASE
+è una raccolta organizzata di dati memorizzati elettronicamente (facilitano recupero , modifica , cancellazione , accesso)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/laboratorio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/laboratorio/</guid>
+      <description>&lt;p&gt;passare a utente postrgres
+&lt;code&gt;sudo -i -u postgres&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Creare database
+&lt;code&gt;createdb mydb&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Creare nuovo utente
+&lt;code&gt;psql -c &amp;quot;CREATE USER myuser WITH PASSWORD &#39;mypassword&#39;;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;dare permessi
+&lt;code&gt;psql -c &amp;quot;GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;verificare connessione
+&lt;code&gt;psql -U myuser -d mydb -h localhost -W&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/non-strtturati-o-semi-strutturati/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/non-strtturati-o-semi-strutturati/</guid>
+      <description>&lt;p&gt;scalabilità orizzontale (aggiungono nodo affianco e non sostituisco)
+sviluppati su piu nodi (ogni nodo ha replica e viene eletto nodo primaria)
+partizionamento (interruzione nella continuità dei dati)
+teorema CAP è impossibile garantire 3 su 3 massimo 2 su 3 (coerenza : anche se utenti vedono stessa cosa devono vedere la stessa roba , disponibilità : subito risposta , tolleranza a partizioni )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/postgresql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/postgresql/</guid>
+      <description>&lt;p&gt;2 file di configurazione importanti&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/pg_hba.conf&lt;/code&gt; autenticazione basata su host&lt;br&gt;
+&lt;code&gt;/postgresql.conf&lt;/code&gt; parametri  server (memoria , rete)&lt;/p&gt;
+&lt;p&gt;quando accedi da remoto devi accedere a database  e creare una connessione alla volta&lt;/p&gt;
+&lt;p&gt;ci sono 2 template
+template 1
+template 0 master (se modifichiamo template 1)
+solo proprietario database o SU puo eliminare database
+&lt;code&gt;DROP DATABASE name;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tablespace&#34;&gt;TABLESPACE&lt;/h3&gt;
+&lt;p&gt;organizzare spazio su disco
+directory del filesystem per memorizzate dati , tabelle ecc.
+2 tablespace : pg_defualt , pg_global&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/pratica/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/pratica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/relazionali/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/relazionali/</guid>
+      <description>&lt;p&gt;dati organizzati in tabella con righe e colonne
+ogni riga RECORD unico&lt;/p&gt;
+&lt;p&gt;Chiave primaria (identificano (uno o piu attributi) univocamente ogni record)
+Chiave esterna (collegamento fra 2 tabelle)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/database/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/database/sql/</guid>
+      <description>&lt;p&gt;DICHIARITIVO  SQL : specifica cosa ottenere senza preoccuparsi di come&lt;/p&gt;
+&lt;p&gt;procedurale PL/SQL&lt;/p&gt;
+&lt;p&gt;diviso in :
+DDL (Data Definition Language) per gestire database
+CREATE
+ALTER
+DROP
+TRUNCATE (rimuovo record ma non tabella)&lt;/p&gt;
+&lt;p&gt;DML (Data manipulation Language)
+SELECT
+INSERT
+UPDATE
+DELETE&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/devops/docker-compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/devops/docker-compose/</guid>
+      <description>&lt;p&gt;Docker Compose è utile per &lt;strong&gt;gestire più container (servizi)&lt;/strong&gt; contemporaneamente, attraverso un file YAML strutturato in 3 sezioni principali:&lt;/p&gt;
+&lt;h2 id=&#34;-struttura-base-del-file-docker-composeyml&#34;&gt;📁 Struttura Base del File &lt;code&gt;docker-compose.yml&lt;/code&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;services&lt;/strong&gt; → definisce i container (es: backend, database)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;volumes&lt;/strong&gt; → volumi condivisi e persistenti&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;networks&lt;/strong&gt; → rete virtuale tra containe&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;services&#34;&gt;SERVICES&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+services:
+	nome_servizio_1:
+		image: nome_immagine_da_prendere_da_docker 
+		build: percorso_docker_file se lo hai
+		container_name: nome_container
+		enviroment:
+			NOME_VARIABILE_AMBIENTE: 1223
+		 ports:
+			 -&amp;#34;porta macchina host: porta container&amp;#34; 
+			 - &amp;#34;porta-fineportarange&amp;#34;:&amp;#34;...&amp;#34;
+		 volumes:
+			 - nome volume:cartella da collegare 
+			 - file o folder su  host:dove montarla nel container
+		 command: comando shell
+		 networks: 
+			  -
+			  -
+		depends_on: servizio_che_aspetta_prima_di_partire
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;se comando è al  plurale (ports, volumes) allora è consigliato usare sempre gli -&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/devops/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/devops/docker/</guid>
+      <description>&lt;p&gt;Docker crea ambienti coerenti e replicabili ovunque&lt;/p&gt;
+&lt;p&gt;MACCHINE VIRTUALI vs DOCKER
+Docker condivide  kernel con macchina host  e questo porta a vantaggi&lt;/p&gt;
+&lt;p&gt;su DOCKER lavoriamo con &lt;strong&gt;IMMAGINI&lt;/strong&gt;,&lt;strong&gt;CONTAINER&lt;/strong&gt;,&lt;strong&gt;VOLUMI&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;immagine&#34;&gt;IMMAGINE&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Immagine&lt;/strong&gt; è un blueprint
+per costruirla ci serve un DockerFile (non ha estensione)
+e usare comando  &lt;strong&gt;&lt;code&gt;docker build  -t python .&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;opzione -t ci dice che useremo file dockerFile
+. dove si trova il DockerFile&lt;/p&gt;
+&lt;h2 id=&#34;container&#34;&gt;CONTAINER&lt;/h2&gt;
+&lt;p&gt;Container è istanza isolata del immagine
+per creare container dobbiamo usare comando
+``docker run {nome_immagine}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/devops/dockerfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/devops/dockerfile/</guid>
+      <description>&lt;p&gt;file non deve avere estensione&lt;/p&gt;
+&lt;p&gt;esempio&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM python
+WORKDIR /app
+COPY . . 
+RUN pip3 install flask
+ENV MSG=&amp;#34;BENVENUTO&amp;#34;
+CMD [&amp;#34;python&amp;#34;,&amp;#34;main.py&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;comandi sempre in maiuscolo&lt;/strong&gt;
+per convenzione  WORKDIR  è /app
+COPY . .  (copia contenuto  cartella dove c è immagine e mettilo in workdir)
+ENV MSG=&amp;ldquo;BENVENUTO&amp;rdquo; (metti variabile ambientale = globale per container di docker)
+RUN esegue
+CMD esegue  ( ha bisogno comandi come se fossero lista di python)&lt;/p&gt;
+&lt;p&gt;RUN vs CMD
+RUN  viene eseguito durante il build
+CMD quando passiamo da immagine a container&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/devops/passare-file-da-container-a-host-e-viceversa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/devops/passare-file-da-container-a-host-e-viceversa/</guid>
+      <description>&lt;p&gt;crea immagine e assegnali nome
+&lt;code&gt;podman build . --tag {nome_immagine}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;runna container in modalita interattiva
+&lt;code&gt;podman run --name {nome_container} -it {nome_immagine}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;su altro terminale creato per passare file da container -&amp;gt; host
+&lt;code&gt;podman cp {nome_container}:{posizione_file}   {path}\{nome_file}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/guida-crea-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/guida-crea-blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&amp;amp;feature=youtu.be&#34;&gt;Guida&lt;/a&gt; da cui prendere spunto
+&lt;a href=&#34;https://adityatelange.github.io/hugo-PaperMod/&#34;&gt;Guida&lt;/a&gt; per tema&lt;/p&gt;
+&lt;p&gt;installa git
+installa go
+intalla hugo&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;## per creare un nuovo sito
+hugo new site {nome sito} --format yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;poi entra in cartella creata
+per installare tema&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git init
+git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+git submodule update --init --recursive 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;modifica file hugo.yaml
+(i menu servono per header)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;baseURL: https://volreuomo.github.io/blog/
+
+languageCode: en-us
+
+title: Cybersec Blog
+
+theme : [&amp;#34;PaperMod&amp;#34;]
+
+params:
+
+  assets:
+
+    disableFingerprinting: true
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;crea file .nojekyll vuoto&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/archiviazione-vs-compressione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/archiviazione-vs-compressione/</guid>
+      <description>&lt;p&gt;Archiviazione vs Compressione
+Archiviazione mette + file in un unico file &lt;strong&gt;.tar&lt;/strong&gt; non comprime
+Compressione può essere compresso solo un file&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;tar -cf {nome_archivio.tar} {file da archiviare}&lt;/code&gt; crea archivio
+&lt;code&gt;tar -xf {nome archivio (.tar/gzip/bz)}&#39; estrai suggerimento crea cartella appoggio per estrazione &lt;/code&gt;tar -xf {nome archivio} -C {cartella appoggio}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/concatenazione-comandi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/concatenazione-comandi/</guid>
+      <description>&lt;p&gt;| (pipe) passa output del comando precedente come input al comando successivo
+; non mi frega se il precedente è andato bene
+&amp;amp;&amp;amp; esegui secondo comando solo se quello di prima è andato e buon fine
+|| solo se precedente fallisce&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/deamon-con-systemd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/deamon-con-systemd/</guid>
+      <description>&lt;p&gt;COME FATTO IO&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Unit]
+Description=uvicorn instance to serve nginx
+After=network.target
+
+[Service]
+User=user
+Group=www-data
+WorkingDirectory=/home/user/Progetti/fastino
+ExecStart=/home/user/Progetti/fastino/.venv/bin/uvicorn main:app --uds /home/us&amp;gt;
+
+
+[Install]
+WantedBy=multi-user.target
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;servizio è deamon che puo essere avviato e stoppato&lt;/p&gt;
+&lt;p&gt;crea un nuovo file che termina .service nella cartella /etc/systemd/system&lt;/p&gt;
+&lt;p&gt;FARE ESEMPIO con serivio per attivare server fastapi in python&lt;/p&gt;
+&lt;p&gt;server_python.service&lt;/p&gt;
+&lt;p&gt;3 parti di un file che definisce un servizio&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;[Unit]: contiene metadati e dipendenze e quando per partire&lt;/li&gt;
+&lt;li&gt;[Service]: cosa e come fa il servizio&lt;/li&gt;
+&lt;li&gt;[Install]: come servizio deve essere collegato ad avvio automatico (per esempio systemctl enable service)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Esempio : install ci dice che fa parte cantanti , unit che si esibira dopo altro cantante&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/dns-server-con-bind9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/dns-server-con-bind9/</guid>
+      <description>&lt;p&gt;fonti : &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-20-04&#34;&gt;https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-20-04&lt;/a&gt; e &lt;a href=&#34;https://bind9.readthedocs.io/en/stable/chapter3.html&#34;&gt;3. Configurations and Zone Files — BIND 9 9.20.9 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;installa bind 9&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install bind9 bind9utils bind9-doc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;devi andare nelle cartella /etc/bind&lt;/p&gt;
+&lt;p&gt;aprire il file named.conf.options
+e scrivi qualcosa del genere&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;options{
+
+forwarders{
+	8.8.8.8;
+	1.1.1.1;
+	}
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;configura il file named.conf.local&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+
+zone &amp;#34;nome.zona&amp;#34; {
+    type primary;
+    file &amp;#34;/etc/bind/zones/db.nome.zona&amp;#34;; # zone file path
+
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;creare cartella zones e poi creare il file db.nome.zona
+e in questo file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$TTL 86400  ; TTL predefinito: 1 giorno (86400 secondi)
+
+@       IN      SOA     ns1.nome.zona. hostmaster.nome.zona. (
+                              2025060701 ; Serial: Numero di serie (AnnoMeseGiornoSequenza)
+                              7200       ; Refresh: 2 ore
+                              3600       ; Retry: 1 ora
+                              604800     ; Expire: 1 settimana
+                              86400 )    ; Negative Cache TTL: 1 giorno
+
+; Record NS (Name Server): Indica chi è il server autorevole per il dominio
+@       IN      NS      ns1.nome.zona.
+
+; Record A (Address): Mappa i nomi agli indirizzi IPv4
+@       IN      A       192.0.2.100    ; Indirizzo IP del dominio base (nome.zona)
+ns1     IN      A       192.0.2.101    ; Indirizzo IP del tuo name server (ns1.nome.zona)
+www     IN      A       192.0.2.100    ; Indirizzo IP per www.nome.zona (stesso del dominio base)
+mail    IN      A       192.0.2.102    ; Indirizzo IP del tuo server di posta (mail.nome.zona)
+
+; Record MX (Mail Exchanger): Specifica il server per la posta elettronica
+@       IN      MX 10   mail.nome.zona. ; Il tuo server di posta, con priorità 10
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ATTENTO A METTERE SEMPRE I PUNTI ALLA FINE e ad ogni modifica CAMBIARE il numero di serie se no bind non aggiorna&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/file-descriptor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/file-descriptor/</guid>
+      <description>&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; ci dice che quello dopo devi valutarlo come un file descriptor e non come un nome di file&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;2&amp;gt;&amp;amp;1&lt;/code&gt; prendi errori standard e mettilo nello stesso stream del output standard&lt;/p&gt;
+&lt;p&gt;differenza uso &lt;code&gt;2&amp;gt;&amp;amp;1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;ATTENTO un flusso puo essere indirizzato solo da una parte e viene valutato ultima spedizione flusso
+&lt;code&gt;comando &amp;gt; ciao.txt &amp;gt; roma.txt&lt;/code&gt; scrive solo file &lt;code&gt;roma.txt&lt;/code&gt;
+&lt;code&gt;comando 2&amp;gt; errori.txt &amp;gt; output.txt&lt;/code&gt; scrive entrambi perchè diversi flussi&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find / -name output &amp;gt; ciao.txt 2&amp;gt;&amp;amp;1&lt;/code&gt;
+prende output stream errori e li mette insieme a output stream standard nel file e tutti insieme vanno nel file ciao.txt
+&lt;code&gt;find / -name output 2&amp;gt;&amp;amp;1 &amp;gt; ciao.txt&lt;/code&gt;
+sul terminale mette stream 2 insieme a stream 1 e poi stampa solo stream che normalmenti stampati&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/filesystem-cosa-fanno-cartelle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/filesystem-cosa-fanno-cartelle/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://linuxhandbook.com/linux-directory-structure/&#34;&gt;Linux Directory Structure Explained for Beginners&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;/boot :file essenziali del sistema operativo
+/dev : dedidicati ad hardware (quando facciamo partizioni)
+/etc : file di configurazione
+/lib : librerie condivise
+/home : dati personali dagli utenti
+/mnt : montaggio per qualsiasi disco
+/opt : roba di terza parti
+/proc : file virtuali per accedere in real time a info su processi
+/root : home directory del utente root
+/sbin : comandi per amministratori (info su ram , cpu)
+/temp: file temporanei
+/usr : programmi e doc non importante
+/var : dati variabili e modificati spesso (es. logs)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/filesystem-e-i-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/filesystem-e-i-node/</guid>
+      <description>&lt;p&gt;/root&lt;/p&gt;
+&lt;p&gt;path (percorso)
+assoluto : parte sempre da /
+relativo : parte da cwd&lt;/p&gt;
+&lt;p&gt;l = link (posizione che permette di accedere ad altro)
+d = directory
+owner gruppo&lt;/p&gt;
+&lt;h3 id=&#34;i-node&#34;&gt;i-node&lt;/h3&gt;
+&lt;p&gt;serve al filesystem  per ritrovare i file
+ogni file (ricorda che tutto file in linux anche cartelle) ha proprio inode che ha metadati
+I-node number (riutilizzabile se file eliminato )
+tipo file (- regular files , d directory ,)
+UID identificare
+GID (group ID) informazione al gruppo in cui si trova file
+MODE permessi dei file
+SIZE dimensione del file in byte
+TIMESTAMP data di creazione del file
+Puntatori Diretti a memoria
+Puntatori Indiretti a memoria (punta a lista i cui elementi puntano a memoria)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/link/</guid>
+      <description>&lt;p&gt;Hardlink = alias / ethichetta  , condivide stesso inode (UID) (riferimento diretto al file su memoria fisica)
+punta a memoria fisica
+rimuovendo il file principale , hardlink rimane
+non si puo creare hardlink di cartelle e per file system diversi
+&lt;code&gt;ln file_da_hard_linkare hard_link&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Soflink
+punta a file di cui fatto softlink
+è file che conteiene un collegamento
+&lt;code&gt;ln -s file_da_soft_linkare  soft_link&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/nginx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/nginx/</guid>
+      <description>&lt;p&gt;REVERSE PROXY
+utile per load balancer (smista grossi carichi di lavoro tra vari servies)&lt;/p&gt;
+&lt;p&gt;NEL CASO USIAMO PYTHON e FRAMEWORK BACKEND&lt;br&gt;
+startare con uvicorn che crera un socket da zero nella path  indicata (uds sta per unix domain socket)
+&lt;code&gt;uvicorn nome_file:istanza_principale_di_framewrok --uds ~/fast.sock&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;CONFIGURAZIONE&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;server { 
+    listen 80;
+    listen [::]:80;
+
+    server_name 192.168.22.87;
+
+    location / {
+        proxy_pass http://unix:/home/user/fast.sock;
+        include proxy_params;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;SERVER_NAME
+server_name aiuta nginx a fare routing in questo caso se richiesta viene da chi si è interfacciato a servizio usando ip 192.168.22.87 ( fa x)
+si usa anche per diversi nomi di dominio
+per capire come funziona server_name usa questa guida : &lt;a href=&#34;https://statuslist.app/nginx/server_name/&#34;&gt;NGINX server_name: How to use it - Status List&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/permessi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/permessi/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt;EAD - &lt;strong&gt;W&lt;/strong&gt;RITE - E&lt;strong&gt;X&lt;/strong&gt;ECUTE
+e ogni owner , group , other a questi&lt;/p&gt;
+&lt;p&gt;il proprietario del file è chi crea il file ( o modificato dopo da comandi)
+il gruppo è  il gruppo del proprietario del file
+other = estranei ai primi e 2&lt;/p&gt;
+&lt;p&gt;VERSIONE CLASSICA
+rwx&lt;/p&gt;
+&lt;p&gt;VERSIONALE OTTALE
+rwx
+421&lt;/p&gt;
+&lt;p&gt;quindi 0 = &amp;mdash; , 1 = &amp;ndash;x , 3 = -wx&lt;/p&gt;
+&lt;p&gt;OLTRE A CLASSICI permessi&lt;/p&gt;
+&lt;h2 id=&#34;sticky-bit&#34;&gt;Sticky bit&lt;/h2&gt;
+&lt;p&gt;solo il proprietario file puo eliminare i file (perchè se no tutti potevano eliminare file se avevano permesso nella cartella)
+1 davanti a altri 3 numeri della versione ottale
+si vede facendo ll e si vede che al posto del execute di others c è una t o T (a seconda di execute è dato a others oppure no)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/processi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/processi/</guid>
+      <description>&lt;p&gt;creato quando eseguo file eseguibile (permessi di r e x)
+creato in foreground
+per background si usa il &amp;amp; alla fine comando shell&lt;/p&gt;
+&lt;h3 id=&#34;generazione-dei-processi-padre-e-figlio&#34;&gt;generazione dei processi (padre e figlio)&lt;/h3&gt;
+&lt;p&gt;INIT punto di inizio di tutti i processi (PID) e crea una sorta di albero
+al inizio padre e figlio quasi simili ma figlio poi si specializza in altro&lt;/p&gt;
+&lt;h4 id=&#34;pcb&#34;&gt;PCB&lt;/h4&gt;
+&lt;p&gt;tipo i-node ma per processi , tiene tutte informazioni su processo
+si trova solo su RAM&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/redirect-e-file-descriptor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/redirect-e-file-descriptor/</guid>
+      <description>&lt;p&gt;redirect = dirigere flusso da altre parte
+tipologio redirect
+standard output &amp;gt;  quello di prima lo metti nel dopo
+standard input &amp;lt; (quello che prendi dopo lo metti nel primo comando)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;2&amp;gt;&amp;amp;1&lt;/code&gt; prendi errori standard e mettilo nello stesso stream del output standard&lt;/p&gt;
+&lt;p&gt;differenza uso &lt;code&gt;2&amp;gt;&amp;amp;1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;ATTENTO un flusso puo essere indirizzato solo da una parte e viene valutato ultima spedizione flusso
+&lt;code&gt;comando &amp;gt; ciao.txt &amp;gt; roma.txt&lt;/code&gt; scrive solo file &lt;code&gt;roma.txt&lt;/code&gt;
+&lt;code&gt;comando 2&amp;gt; errori.txt &amp;gt; output.txt&lt;/code&gt; scrive entrambi perchè diversi flussi&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/ricerca-di-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/ricerca-di-file/</guid>
+      <description>&lt;p&gt;&lt;code&gt;grep&lt;/code&gt; ricerca dentro un file
+&lt;code&gt;find&lt;/code&gt; ricerche complesse e aggiornate in tempo reale
+&lt;code&gt;locate&lt;/code&gt; ricerche velocissime ma non tempo reale&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/root/</guid>
+      <description>&lt;p&gt;/var/log logs
+/etc configurazioni&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/shell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/shell/</guid>
+      <description>&lt;p&gt;nome_utente@nome_macchina&lt;/p&gt;
+&lt;p&gt;VARIABILI:&lt;/p&gt;
+&lt;p&gt;di tue tipo shell ( valgono solo per quel terminale ) vs enviroment valgono ovunque&lt;/p&gt;
+&lt;p&gt;posso definire variabile di shell cosi&lt;/p&gt;
+&lt;p&gt;cosi ASSEGNO VARIABILE nome_variabile=contenuto (senza spazio)
+per assegnare piu valori dobbiamo usare i :
+ciao=valore1:valore2:valore3&lt;/p&gt;
+&lt;p&gt;cosi la uso $nome_variabile ( posso usare anche cosi quelle di env)&lt;/p&gt;
+&lt;p&gt;per fare diventare variabile di shell → env comando export
+devono essere per convenzione in maiuscolo nomi variabili
+quale è variabile di env piu importante PATH dove vengono contenuti i percorsi separati da : dove la shell cerca i “programmi da eseguire”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/trasferimenti-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/trasferimenti-file/</guid>
+      <description>&lt;p&gt;SCP e SFTP (SFTP tramite SSH)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/trucchetti-per-lavorare-coi-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/trucchetti-per-lavorare-coi-file/</guid>
+      <description>&lt;h4 id=&#34;specificare-directory-corrente&#34;&gt;Specificare directory corrente&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;./  &lt;/code&gt;
+Serve per non creare problemi perché se abbiamo file &lt;code&gt;-file01&lt;/code&gt;
+&lt;code&gt; cat -file01&lt;/code&gt; viene visto da shell come &lt;code&gt;cat -f ile01 &lt;/code&gt; allora dobbiamo usare &lt;code&gt; cat ./-file01&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&#34;accedere-a-file-con-spazi-vuoti-nel-nome&#34;&gt;Accedere a file con spazi vuoti nel nome&lt;/h5&gt;
+&lt;p&gt;si accede a file con spazi vuoti nel nome usando gli apostrofi
+&lt;code&gt; cat &amp;quot;file con spazi vuoi&amp;quot;&lt;/code&gt;
+oppure si usa la &lt;br&gt;
+&lt;code&gt;cat file\ con\ spazi\ vuoti&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;caratteri-speciali&#34;&gt;Caratteri speciali&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; per indicare tutte le possibili sequenze
+&lt;code&gt; file *.pdf&lt;/code&gt; vale per ogni file che termina con .pdf&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/linux/visualizzazione-e-comparazione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/linux/visualizzazione-e-comparazione/</guid>
+      <description>&lt;p&gt;&lt;code&gt;less&lt;/code&gt;
+&lt;code&gt;cat&lt;/code&gt; :visualizza e concatena
+&lt;code&gt;head&lt;/code&gt; : visualizza prime righe
+&lt;code&gt;tail&lt;/code&gt; : visualizza ultime righe
+&lt;code&gt;wc&lt;/code&gt; : wordcount
+&lt;code&gt;diff&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/acl--accesso-control-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/acl--accesso-control-list/</guid>
+      <description>&lt;h4 id=&#34;a-cose-serve-&#34;&gt;a cose serve ?&lt;/h4&gt;
+&lt;p&gt;sicurezza , regola quali dispositivi hanno accesso alla rete&lt;/p&gt;
+&lt;h5 id=&#34;cosa-è-&#34;&gt;cosa è ?&lt;/h5&gt;
+&lt;p&gt;un filtro , che dice a router di permettere o scartare pacchetto&lt;/p&gt;
+&lt;h4 id=&#34;cosa-è-importante-acl&#34;&gt;cosa è importante acl&lt;/h4&gt;
+&lt;p&gt;implicit deny  su ogni singola ACL e vengono lette (da numero piu basso a piu alto) finche occorrenza non corrisponde&lt;/p&gt;
+&lt;h4 id=&#34;miglior-modo-di-configurare&#34;&gt;miglior modo di configurare&lt;/h4&gt;
+&lt;p&gt;fare tutta configurazione in stesso numero nome ACL  se no per via del implicito deny puo non arrivare mai a numero successivo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/arp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/arp/</guid>
+      <description>&lt;h4 id=&#34;a-cosa-serve&#34;&gt;a cosa serve?&lt;/h4&gt;
+&lt;p&gt;associare indirizzo IP ( layer 3 ) a MAC address ( layer 2)&lt;/p&gt;
+&lt;h4 id=&#34;perchè-serve-&#34;&gt;perchè serve ?&lt;/h4&gt;
+&lt;p&gt;perchè quando craftiamo il pacchetto ( seguendo pila TCP / IP ) dobbiamo inserire anche info per layer 2 che richiede MAC address di source e dest&lt;/p&gt;
+&lt;h4 id=&#34;come-funziona&#34;&gt;come funziona&lt;/h4&gt;
+&lt;p&gt;1 inviata arp request ( source mac address : quella del pc che fa richiesta , dest mac address : ff:ff:ff:ff (broadcast) e IP da associare a mac address e  IP di chi ha fatto richiesta&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/cli/</guid>
+      <description>&lt;h6 id=&#34;per-cosa-sta-cli-&#34;&gt;per cosa sta CLI ?&lt;/h6&gt;
+&lt;p&gt;Command Line Interface&lt;/p&gt;
+&lt;h6 id=&#34;con-che-tipo-cavo-mi-connetto-a-router--switch-cisco&#34;&gt;con che tipo cavo mi connetto a router / switch Cisco&lt;/h6&gt;
+&lt;p&gt;Rollover cable&lt;/p&gt;
+&lt;h6 id=&#34;come-mi-connetto-da-pc-a--cli-del-routerswitch&#34;&gt;come mi connetto da pc a  CLI del router/switch&lt;/h6&gt;
+&lt;p&gt;PuTTy&lt;/p&gt;
+&lt;h6 id=&#34;cofigurazione-putty&#34;&gt;cofigurazione PuTTy&lt;/h6&gt;
+&lt;p&gt;IMMAGINE&lt;/p&gt;
+&lt;h2 id=&#34;modalita&#34;&gt;MODALITA&lt;/h2&gt;
+&lt;h6 id=&#34;quali-sono-le-3-modalità-in-dispositivo-cisco&#34;&gt;quali sono le 3 modalità in dispositivo CISCO&lt;/h6&gt;
+&lt;p&gt;USER , ROOT . CONFIG&lt;/p&gt;
+&lt;h6 id=&#34;con-che-comando-passare-da-user--a-root&#34;&gt;con che comando passare da USER  a ROOT&lt;/h6&gt;
+&lt;p&gt;enable&lt;/p&gt;
+&lt;h6 id=&#34;da-root-a-config&#34;&gt;da ROOT a CONFIG&lt;/h6&gt;
+&lt;p&gt;configure terminal&lt;/p&gt;
+&lt;h6 id=&#34;da-config-a-root&#34;&gt;da CONFIG a ROOT&lt;/h6&gt;
+&lt;p&gt;exit&lt;/p&gt;
+&lt;h6 id=&#34;eseguire-comandi-in-modalità-enable-da-altre-modalità&#34;&gt;eseguire comandi in modalità enable da altre modalità&lt;/h6&gt;
+&lt;p&gt;do {comando}&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/dhcp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/dhcp/</guid>
+      <description>&lt;h5 id=&#34;come-è-richiesta-dhcp-inviata-da-host-&#34;&gt;come è richiesta dhcp inviata da host ?&lt;/h5&gt;
+&lt;p&gt;layer 3 con ip source 0.0.0.0 e ip di destinazione 255.255.255.255&lt;/p&gt;
+&lt;h5 id=&#34;come-configurare-dhcp&#34;&gt;come configurare DHCP&lt;/h5&gt;
+&lt;p&gt;&lt;code&gt;ip dhcp pool {nome che vuoi dare}&lt;/code&gt;
+&lt;code&gt;default-router {ip del gateway rete}&lt;/code&gt;
+&lt;code&gt;network {ip network} {subnetmask}&lt;/code&gt;
+&lt;code&gt;ip dhcp exluded address {ip inizo} {ip fine}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/dns-server-con-bind9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/dns-server-con-bind9/</guid>
+      <description>&lt;p&gt;fonti : &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-20-04&#34;&gt;https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-20-04&lt;/a&gt; e &lt;a href=&#34;https://bind9.readthedocs.io/en/stable/chapter3.html&#34;&gt;3. Configurations and Zone Files — BIND 9 9.20.9 documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;installa bind 9&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install bind9 bind9utils bind9-doc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;devi andare nelle cartella /etc/bind&lt;/p&gt;
+&lt;p&gt;aprire il file named.conf.options
+e scrivi qualcosa del genere&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;options{
+
+forwarders{
+	8.8.8.8;
+	1.1.1.1;
+	}
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;configura il file named.conf.local&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+
+zone &amp;#34;nome.zona&amp;#34; {
+    type primary;
+    file &amp;#34;/etc/bind/zones/db.nome.zona&amp;#34;; # zone file path
+
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;creare cartella zones e poi creare il file db.nome.zona
+e in questo file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$TTL 86400  ; TTL predefinito: 1 giorno (86400 secondi)
+
+@       IN      SOA     ns1.nome.zona. hostmaster.nome.zona. (
+                              2025060701 ; Serial: Numero di serie (AnnoMeseGiornoSequenza)
+                              7200       ; Refresh: 2 ore
+                              3600       ; Retry: 1 ora
+                              604800     ; Expire: 1 settimana
+                              86400 )    ; Negative Cache TTL: 1 giorno
+
+; Record NS (Name Server): Indica chi è il server autorevole per il dominio
+@       IN      NS      ns1.nome.zona.
+
+; Record A (Address): Mappa i nomi agli indirizzi IPv4
+@       IN      A       192.0.2.100    ; Indirizzo IP del dominio base (nome.zona)
+ns1     IN      A       192.0.2.101    ; Indirizzo IP del tuo name server (ns1.nome.zona)
+www     IN      A       192.0.2.100    ; Indirizzo IP per www.nome.zona (stesso del dominio base)
+mail    IN      A       192.0.2.102    ; Indirizzo IP del tuo server di posta (mail.nome.zona)
+
+; Record MX (Mail Exchanger): Specifica il server per la posta elettronica
+@       IN      MX 10   mail.nome.zona. ; Il tuo server di posta, con priorità 10
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ATTENTO A METTERE SEMPRE I PUNTI ALLA FINE e ad ogni modifica CAMBIARE il numero di serie se no bind non aggiorna&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/dns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/dns/</guid>
+      <description>&lt;h5 id=&#34;cosa-fa-dns-&#34;&gt;cosa fa DNS ?&lt;/h5&gt;
+&lt;p&gt;risolve nomi di dominio in indirizzi ip&lt;/p&gt;
+&lt;h4 id=&#34;cosa-sono-i-nomi-di-dominio&#34;&gt;cosa sono i nomi di dominio&lt;/h4&gt;
+&lt;p&gt;hostname + Top-level domain
+esempio:   google(hostname).it ( top - level domain)&lt;/p&gt;
+&lt;h5 id=&#34;come-funziona-dns&#34;&gt;come funziona DNS&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;il nostro pc interroga il recursive  DNS resolver ( dato da ips o inserito da noi)&lt;/li&gt;
+&lt;li&gt;il recursive DNS server interroga il DNS root nameserver&lt;/li&gt;
+&lt;li&gt;il root server da a recursive DNS ip del DNS TLD nameserver per quel T.D.L&lt;/li&gt;
+&lt;li&gt;il recursive DNS resolver invia richiesta a  DNS TLD nameserver  che risponde con ip del  DNS authoritative&lt;/li&gt;
+&lt;li&gt;il recursive DNS resolver invia richiesta a DNS authoritative  server che risponde con IP  nome di dominio&lt;/li&gt;
+&lt;li&gt;il recursive DNS resolver invia risposta a nostro pc&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/etherchannel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/etherchannel/</guid>
+      <description>&lt;h6 id=&#34;come-creare&#34;&gt;Come creare&lt;/h6&gt;
+&lt;p&gt;Seleziona le interfacce su cui attivare etherchannel attraverso il range
+Comando : channel-group 1 mode on&lt;/p&gt;
+&lt;h5 id=&#34;come-configurare-robe-su-etherchannel&#34;&gt;come configurare robe su etherchannel&lt;/h5&gt;
+&lt;p&gt;esci da  interfacce e usa comando
+interface port-channel 1&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/interfacce-e-cavi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/interfacce-e-cavi/</guid>
+      <description>&lt;h6 id=&#34;cosa-è-ethernet&#34;&gt;Cosa è Ethernet?&lt;/h6&gt;
+&lt;p&gt;una collezione di standard e protocolli&lt;/p&gt;
+&lt;h5 id=&#34;cosa-è-un-bit&#34;&gt;cosa è un Bit?&lt;/h5&gt;
+&lt;p&gt;1 o 0&lt;/p&gt;
+&lt;h6 id=&#34;cosa-è-un-byte&#34;&gt;cosa è un Byte?&lt;/h6&gt;
+&lt;p&gt;8 bit&lt;/p&gt;
+&lt;h5 id=&#34;come-misurata-velocità--come-archiviazione&#34;&gt;come misurata velocità ? come archiviazione?&lt;/h5&gt;
+&lt;p&gt;velocità bit per secondo , archiviazione in byte&lt;/p&gt;
+&lt;h6 id=&#34;ethernet-tabella&#34;&gt;ethernet tabella&lt;/h6&gt;
+&lt;p&gt;INSERIRE IMMAGINE&lt;/p&gt;
+&lt;h6 id=&#34;cavo-utp&#34;&gt;Cavo UTP&lt;/h6&gt;
+&lt;p&gt;Unshileded ( no metallo )
+Twisted ( protegge da campi magentici)
+non tutti usano 8 cavi come in foto ( molti meno cavi ma sempre pairati in 2)&lt;/p&gt;
+&lt;h6 id=&#34;full-duplex-trasmission&#34;&gt;Full duplex trasmission&lt;/h6&gt;
+&lt;p&gt;Trasmettono e ricevono a stesso tempo e non ci saranno problemi di collisione
+punti sono i pin
+1 e 2 trasmetto da PC / Router / Firewall
+3 e 6 trasmettono da switc&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/ip-v4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/ip-v4/</guid>
+      <description>&lt;h3 id=&#34;prerequisiti&#34;&gt;prerequisiti&lt;/h3&gt;
+&lt;h5 id=&#34;trasformazione-numero-da-decimale-e-binario-e-viceversa&#34;&gt;trasformazione numero da decimale e binario e viceversa&lt;/h5&gt;
+&lt;p&gt;AGGIUNGI IMMAGINI&lt;/p&gt;
+&lt;h6 id=&#34;cosa-è-idirizzo-ip&#34;&gt;cosa è idirizzo IP&lt;/h6&gt;
+&lt;p&gt;sono 32 bit ( 4 ottetti ) che identificano unicamente un host in &lt;strong&gt;quella rete&lt;/strong&gt;&lt;/p&gt;
+&lt;h6 id=&#34;come-puo-essere-un-indirizzo-ip&#34;&gt;come puo essere un indirizzo ip?&lt;/h6&gt;
+&lt;p&gt;privato o pubblico&lt;/p&gt;
+&lt;h6 id=&#34;classi-ip-v4&#34;&gt;classi IP v4&lt;/h6&gt;
+&lt;p&gt;da 10.0.0.0 a 10.255.255.255    subnetmask  /8  serve per ISP
+da 172.16.0.0 a 172.31.255.255 /16 serve per universita ecc.
+da 192.168.0.0 a 192.168.255.255  / 24 serve per LAN&lt;/p&gt;
+&lt;h6 id=&#34;ip-speciale-127001-come-si-chiama&#34;&gt;ip speciale 127.0.0.1 come si chiama&lt;/h6&gt;
+&lt;p&gt;loopback&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/ip-v6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/ip-v6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/iso-osi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/iso-osi/</guid>
+      <description>&lt;h5 id=&#34;cosa-succede-a-data-dal-alto-verso-il-basso&#34;&gt;cosa succede a data dal alto verso il basso&lt;/h5&gt;
+&lt;p&gt;aggiunti data : ENCAPSULATION&lt;/p&gt;
+&lt;h5 id=&#34;cosa-succede-a-data-dal-basso-verso-alto&#34;&gt;cosa succede a data dal basso verso alto&lt;/h5&gt;
+&lt;p&gt;data strip off  DE-ENCAPSULATION&lt;/p&gt;
+&lt;h5 id=&#34;cosa-fa-il-layer-6-e-esempio&#34;&gt;cosa fa il Layer 6 e esempio&lt;/h5&gt;
+&lt;p&gt;il presentation layer transla tra formato applicazione a formato network
+encrypta e decrypa cosi che recevente e trasmettitore capiscono&lt;/p&gt;
+&lt;h5 id=&#34;cosa-fa-il-layer-5--e-cosa-controlla-&#34;&gt;cosa fa il Layer 5 ? e cosa controlla ?&lt;/h5&gt;
+&lt;p&gt;Session layer controlla dialoghi / sessioni fra hosts
+fasi di instaurazione , mantenimento , disconessione&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/load-balancing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/load-balancing/</guid>
+      <description>&lt;p&gt;smistamento richieste
+ci sono algoritmi (es. Round Robin) che assegnano priorita&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/routing/</guid>
+      <description>&lt;h5 id=&#34;indirizzo-ip-che-di-solito-si-da-network-lan&#34;&gt;indirizzo ip che di solito si da network LAN&lt;/h5&gt;
+&lt;p&gt;192.168.X.X&lt;/p&gt;
+&lt;h5 id=&#34;indirizzo-ip-che-di-solito-si-da-a-reti-di-router&#34;&gt;indirizzo ip che di solito si da a reti di router&lt;/h5&gt;
+&lt;p&gt;10.0.X.X&lt;/p&gt;
+&lt;h5 id=&#34;cosa-è-gateway&#34;&gt;cosa è gateway&lt;/h5&gt;
+&lt;p&gt;funge da punto di ingresso e uscita per traffico dati tra 2  reti ma ha ruolo attivo&lt;/p&gt;
+&lt;h5 id=&#34;come-viene-selezionato-percorso-da-fare--meglio-valore-grande-o-piccolo&#34;&gt;come viene selezionato percorso da fare ? meglio valore grande o piccolo&lt;/h5&gt;
+&lt;p&gt;distanza amministrativa , piccolo&lt;/p&gt;
+&lt;h5 id=&#34;routing-statico&#34;&gt;Routing Statico&lt;/h5&gt;
+&lt;h6 id=&#34;come-fare-routing-statico&#34;&gt;come fare routing statico&lt;/h6&gt;
+&lt;p&gt;&lt;code&gt;ip route {rete che si vuole raggiungere} {sua subnet} {next hop}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/tcp-ip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/tcp-ip/</guid>
+      <description>&lt;h5 id=&#34;come-viene-creata-connessione-tra-2-host--protoccolo&#34;&gt;come viene creata connessione tra 2 host ( protoccolo)&lt;/h5&gt;
+&lt;p&gt;TCP&lt;/p&gt;
+&lt;h5 id=&#34;metodo-con-il-quale-viene-creata-connessione-tra-2-host----sync--sync--ack--ack&#34;&gt;metodo con il quale viene creata connessione tra 2 host    SYNC , SYNC + ACK , ACK&lt;/h5&gt;
+&lt;h5 id=&#34;come-puo-essere-bloccata-da-host-creata-connessione&#34;&gt;come puo essere bloccata da host creata connessione&lt;/h5&gt;
+&lt;p&gt;RST ( RESET)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/traffic-shaping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/traffic-shaping/</guid>
+      <description>&lt;h6 id=&#34;a-cosa-serve&#34;&gt;a cosa serve&lt;/h6&gt;
+&lt;p&gt;gestire rete  come se fossimo dei vigili&lt;/p&gt;
+&lt;h6 id=&#34;come-viene-configurare-traffico-rete&#34;&gt;come viene configurare traffico rete&lt;/h6&gt;
+&lt;p&gt;con 2 shaper uno per upload , altro per download&lt;/p&gt;
+&lt;h6 id=&#34;nomi-traffic-shaper-per-download--upload&#34;&gt;nomi traffic shaper per download / upload&lt;/h6&gt;
+&lt;p&gt;upload : shared
+download : reverse&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/vlan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/vlan/</guid>
+      <description>&lt;h5 id=&#34;cosa-è-vlan&#34;&gt;cosa è VLAN&lt;/h5&gt;
+&lt;p&gt;ci permette di isolare domini di broadcast ( quando inviamo messaggi con dest FF:FF:FF:FF con vlan limitiamo destinatari)&lt;/p&gt;
+&lt;h6 id=&#34;a-cosa-serve-vlan&#34;&gt;a cosa serve VLAN&lt;/h6&gt;
+&lt;p&gt;migliorare prestazioni ( meno ARP ) e sicurezza (impedisce scan nmap)&lt;/p&gt;
+&lt;h6 id=&#34;come-configurare-vlan-prima-di-assegnarla-a-qualcosa&#34;&gt;come configurare VLAN prima di assegnarla a qualcosa&lt;/h6&gt;
+&lt;p&gt;vlan {numero a cui assegnata Vlan diverso da 1}
+name {nome della Vlan}&lt;/p&gt;
+&lt;h6 id=&#34;configura-vlan-su--interfaccia-che-si-collega-a-host&#34;&gt;configura vlan su  interfaccia che si collega a host&lt;/h6&gt;
+&lt;p&gt;scegli interfaccia &lt;br&gt;
+&lt;code&gt;switchport mode access&lt;/code&gt;
+&lt;code&gt;switchport access vlan {numero vlan}&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/networking/vpn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/vpn/</guid>
+      <description>&lt;h5 id=&#34;come-possiamo-vedere-vpn&#34;&gt;come possiamo vedere vpn&lt;/h5&gt;
+&lt;p&gt;tunnel&lt;/p&gt;
+&lt;h6 id=&#34;topologie-vpn&#34;&gt;topologie vpn&lt;/h6&gt;
+&lt;p&gt;mesh
+partial mesh
+hub and spoke
+si dividono per ridondanza / scalabilità / banda&lt;/p&gt;
+&lt;h5 id=&#34;protocolli-vpn&#34;&gt;protocolli vpn&lt;/h5&gt;
+&lt;p&gt;open vpn (tante linee di codice )&lt;/p&gt;
+&lt;p&gt;ipsec(ottimo per enterprise)&lt;/p&gt;
+&lt;p&gt;wireguard (solo udp , facile da configurare , veloce perchè livello kernel)&lt;/p&gt;
+&lt;h6 id=&#34;a-livello-network-come-funziona-vpn&#34;&gt;a livello network come funziona vpn&lt;/h6&gt;
+&lt;p&gt;encapsulazione&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/programmazione/awk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/programmazione/awk/</guid>
+      <description>&lt;p&gt;funzione  principale substring&lt;/p&gt;
+&lt;p&gt;awk -F &amp;ldquo;;&amp;rdquo; (separatore)  &amp;lsquo;{print $2}&amp;rsquo;  # stampa secndo zero $0 tutta riga&lt;/p&gt;
+&lt;p&gt;se vuoi usare script
+BEGIN {}
+a prescindere contenuto file (variaibli , log , messaggio iniziale)&lt;/p&gt;
+&lt;p&gt;END {}
+fine script&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BEGIN {}
+{}
+if (){}
+else{}
+do echo while(0==0){}
+exit 1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;in AWK ci sono funzioni predefinite&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/programmazione/programmazione-asincrona/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/programmazione/programmazione-asincrona/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/programmazione/shell-scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/programmazione/shell-scripting/</guid>
+      <description>&lt;h2 id=&#34;variabili&#34;&gt;Variabili&lt;/h2&gt;
+&lt;p&gt;assegnazione variabile
+&lt;code&gt;numero=1&lt;/code&gt;
+&lt;code&gt;nome_variabile=&amp;quot;stringa&amp;quot;&lt;/code&gt;
+&lt;code&gt;nome_array=(&amp;quot;Questo&amp;quot; &amp;quot;è&amp;quot; &amp;quot;un&amp;quot; &amp;quot;array&amp;quot;)&lt;/code&gt;
+&lt;code&gt;output_comando_linux=$(comando_linux)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;accedere a variabile
+&lt;code&gt;&amp;quot;${nome_variabile}&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;array&#34;&gt;Array&lt;/h2&gt;
+&lt;p&gt;leggere elemento in posizione
+&lt;code&gt;${array[0]}&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;if&#34;&gt;IF&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if [[ condizione ]];  then
+	echo &amp;#34; &amp;#34;
+elif [[ condizione 2]]; then 
+	echo&amp;#34;&amp;#34;
+
+else 
+	echo &amp;#34;&amp;#34;
+
+fi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;attento se usi if al posto degli elif bisogna chiudere sempre con fi&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if [[condizione]]; then
+	echo &amp;#34;&amp;#34;
+fi
+
+if [[ condizone2 ]]; then
+	echo &amp;#34;&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;esempio particolare uso if&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if [[ $nome_arrey =~ variabile_da_controllare ]]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;codice uscita 1 errore
+codice uscita 0 tutto bene&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/programmazione/socket-programming-con-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/programmazione/socket-programming-con-python/</guid>
+      <description>&lt;p&gt;cosa fondamentale e fare sempre creare un socket&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM) # useremo ipv4,useremo TCP&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;qua ci sono 2 strade 1 per server e 1 per client&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;s.bind(&amp;#39;120.23.12.1&amp;#39;,800)  # ip e porta a cui si colleghera il client
+s.listen()  # mettere il server in modalita ascolto 
+accettato,addre=s.accept() # restituisce il socket dove c è collegamento con client e info sul client
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(per ogni collegamento con client diverso c è un socket diverso) , finche non stabilisce una connessione non va avanti con il codice&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/active-directory-its/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/active-directory-its/</guid>
+      <description>&lt;p&gt;dominio centralizzato windows&lt;/p&gt;
+&lt;p&gt;![[AD struttura.png]]&lt;/p&gt;
+&lt;p&gt;domini : unita gestita da server
+server centrale DC ( Domain Control)&lt;/p&gt;
+&lt;p&gt;in DC ci sono degli OGGETTI ( utenti , gruppi (+ utenti a risorse))
+OU (organizzazioni unita ) per delegare permessi&lt;/p&gt;
+&lt;p&gt;GPO (Group policy object) cambiare polocy oggetti
+Work Group (non ha poteri di autenticazione)&lt;/p&gt;
+&lt;p&gt;per fare utente login  (informazioni su DC) c è meccanismo di autenticazione &lt;strong&gt;KERBEROS&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/active-directory-room-thm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/active-directory-room-thm/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Windows Domain&lt;/strong&gt; = insieme di utenti e computers appartengono alla stessa organizzazione
+i Domain servono per centralizzare amministrazione di  computers windows nella rete in una singola repository (spazio) &lt;strong&gt;Active Directory&lt;/strong&gt;
+il server che runna l Active Directory è il &lt;strong&gt;Domain Controller&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;vantaggi del Windows Domain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;centralizzazione come gestisco identita (password , policy ,permessi)&lt;/li&gt;
+&lt;li&gt;configurare security policy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Acive directory supporta tanti oggetti : utenti , gruppi , macchine , stampanti ,, shares&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/infrastruttura/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/infrastruttura/</guid>
+      <description>&lt;p&gt;principali tipi di infrastruttura : tradizionale (on premise),cloud , iperconvergente (cloud con tante da funzionalita facili da integrare insieme = azure)
+![[Infrastrutture.png]]
+DATACENTER
+rack -&amp;gt; struttura fisica dove metti server , switch
+serve gruppo di continuità
+archiavizione -&amp;gt; si usano NAS ( network attached storage) passi dati a livello rete non attaccati a livello fisico
+devono avere protezione fisica (telecamere)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/lezione-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/lezione-2/</guid>
+      <description>&lt;p&gt;dhcp , arp per design insicuri ( non esisteva ai tempi autenticazione) e dobbiamo usare sicurezze in piu&lt;/p&gt;
+&lt;p&gt;possiamo sfruttare i loro design usando spoofing , man in the middle , relay&lt;/p&gt;
+&lt;h2 id=&#34;attacco-su-arp&#34;&gt;ATTACCO SU ARP&lt;/h2&gt;
+&lt;p&gt;arp spoofing attraverso comando kali linux arpsoof esempio uso possiamo aggirare dns server arp gratuito ( rispondiamo senza che nessuno abbia fatto richiesta&lt;/p&gt;
+&lt;h2 id=&#34;attacco-su-dhcp&#34;&gt;ATTACCO SU DHCP&lt;/h2&gt;
+&lt;p&gt;4 fasi DHCP :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;discover ( source IP 0.0.0.0 e destinazione 255.255.255.255)&lt;/li&gt;
+&lt;li&gt;offer ( offerta ip da dhcp server )&lt;/li&gt;
+&lt;li&gt;request&lt;/li&gt;
+&lt;li&gt;ack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;esempio attacchi su DHCP :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/penetration-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/penetration-testing/</guid>
+      <description>&lt;p&gt;FASI KILL CHAIN&lt;/p&gt;
+&lt;p&gt;RECONNAISSANCE (avere informazioni dipendenti , azienda , sistemi informatici)
+WAPONIZATION (costruisci tool per accedere es. malware)
+DELIVERY (consegna)
+EXPOLOITATION
+INSTALLATION (per dare persistenza a exploit)
+COMMAND &amp;amp; CONTROL (commanda e controlla )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/scansione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/scansione/</guid>
+      <description>&lt;h2 id=&#34;scansione-attiva&#34;&gt;Scansione Attiva&lt;/h2&gt;
+&lt;h3 id=&#34;nmap&#34;&gt;NMAP&lt;/h3&gt;
+&lt;p&gt;RICORDA prima cosa nmap vede host è attivo attraverso ping e se non attivo interrompe scansione&lt;/p&gt;
+&lt;p&gt;fai -Pn per saltare scansione host attivo e fare scansione in ogni caso&lt;/p&gt;
+&lt;p&gt;nmap -sV ( vede attraverso payload cosa fa veramente porta ) e viene usato spesso con -sU perchè UDP ha bisogno di serie di payload inviati per vedere se porta aperta&lt;/p&gt;
+&lt;h2 id=&#34;scansione-passiva&#34;&gt;Scansione passiva&lt;/h2&gt;
+&lt;p&gt;DNS Table , ARP table , Wireshark&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/ssh/</guid>
+      <description>&lt;p&gt;Secure shell
+ha layer di crittografia
+server sshd (deamon = eseguita in background)&lt;/p&gt;
+&lt;p&gt;per vedere chi ha loggato &lt;code&gt;w&lt;/code&gt; o &lt;code&gt;who&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;come configurarla
+su client e server devi generare chiavi pubbliche e privae
+&lt;code&gt;ssh-keygen&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;attento : lascia yes password autenticazione poi dopo aver copiato chiavi puoi disattivarla
+client da la  sua chiave pubblicha a server tramite comando
+&lt;code&gt;ssh-copy-id -p {porta se diversa da 22} username@remote_host&lt;/code&gt;
+client si collega al server e il server da sue chiavi pubbliche ( del server) e controlla autenticazione&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/superfici-attacco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/superfici-attacco/</guid>
+      <description>&lt;p&gt;dhcp , arp per design insicuri ( non esisteva ai tempi autenticazione) e dobbiamo usare sicurezze in piu&lt;/p&gt;
+&lt;p&gt;possiamo sfruttare i loro design usando spoofing , man in the middle , relay&lt;/p&gt;
+&lt;h2 id=&#34;attacco-su-arp&#34;&gt;ATTACCO SU ARP&lt;/h2&gt;
+&lt;p&gt;arp spoofing attraverso comando kali linux arpsoof esempio uso possiamo aggirare dns server arp gratuito ( rispondiamo senza che nessuno abbia fatto richiesta&lt;/p&gt;
+&lt;h2 id=&#34;attacco-su-dhcp&#34;&gt;ATTACCO SU DHCP&lt;/h2&gt;
+&lt;p&gt;4 fasi DHCP :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;discover ( source IP 0.0.0.0 e destinazione 255.255.255.255)&lt;/li&gt;
+&lt;li&gt;offer ( offerta ip da dhcp server )&lt;/li&gt;
+&lt;li&gt;request&lt;/li&gt;
+&lt;li&gt;ack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;esempio attacchi su DHCP :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/systemd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/systemd/</guid>
+      <description>&lt;p&gt;suit di supervisore di processi
+systemctl client&lt;/p&gt;
+&lt;p&gt;3 parti fondamentali di un file  definisce un servizio&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;[Unit]: contiene metadati e dipendenze e quando per partire&lt;/li&gt;
+&lt;li&gt;[Service]: cosa e come fa il servizio&lt;/li&gt;
+&lt;li&gt;[Install]: come servizio deve essere collegato ad avvio automatico (per esempio systemctl enable service)&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/utenti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/utenti/</guid>
+      <description>&lt;p&gt;usermod -aG sudo its
+aggiungi utente al gruppo sudo
+per permettere agli utenti di diventare sudo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/virtualizzazione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/virtualizzazione/</guid>
+      <description>&lt;p&gt;vantaggi di entrambi : frammentare risorse&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CONTAINER&lt;/strong&gt;
+fai tu conteneirizzazione su linux facile (namespace , cgroup (limitare risorse),chroot (cambiare root directory)),secops(limita chiamate sistema)&lt;/p&gt;
+&lt;p&gt;Docker a isola a livello di processi
+condivide stesso kernel&lt;/p&gt;
+&lt;p&gt;DOCKER VS PODMAN
+podman : rootless
+podman: deamonless container engine , avvia container e stop&lt;/p&gt;
+&lt;h1 id=&#34;virtual-machine&#34;&gt;VIRTUAL MACHINE&lt;/h1&gt;
+&lt;p&gt;Subio hardware -&amp;gt; Hypervisor (super visitore )
+isoliamo hardware ( bare metal)
+punto critico hypervisor&lt;/p&gt;
+&lt;h2 id=&#34;vdi&#34;&gt;VDI&lt;/h2&gt;
+&lt;p&gt;VIRTUAL DESKTOP INFRASTRUCTURE
+per connettersi a altre risorse
+centralizzare risorse&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/vpn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/vpn/</guid>
+      <description>&lt;p&gt;Come funziona VPN
+creata un interfaccia virtuale di rete e una subnet appartente a vpn&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Indirizzamento&lt;/strong&gt;: I pacchetti dati destinati a un indirizzo nella subnet della VPN vengono inviati all&amp;rsquo;interfaccia di rete virtuale.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Incapsulamento&lt;/strong&gt;: L&amp;rsquo;interfaccia virtuale cifra i pacchetti e li &amp;ldquo;impacchetta&amp;rdquo; in un nuovo pacchetto. Questo pacchetto esterno ha come destinazione l&amp;rsquo;indirizzo IP pubblico del server VPN e utilizza la porta specificata nella configurazione.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Trasmissione&lt;/strong&gt;: Il pacchetto cifrato viene infine inviato tramite l&amp;rsquo;interfaccia di rete fisica del dispositivo (es. Wi-Fi o Ethernet) verso il server VPN.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/chiamate-di-sistema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/chiamate-di-sistema/</guid>
+      <description>&lt;p&gt;permette a programma in modalita utente di richiede e servizi a kernel (avviene switch da modalita user a modalita kernel)&lt;/p&gt;
+&lt;p&gt;piu importanti di tipo sys call : quelle di gestione dei processi
+fork -&amp;gt; dupplica processo creando processo figlio uguale
+wait -&amp;gt;
+exec-&amp;gt;
+exit -&amp;gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/file-system-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/file-system-1/</guid>
+      <description>&lt;p&gt;gerarchico
+FAT (file table)
+non contiguo (contiguo = blocchi o cluster blocchi sono consequenziali senza interruzioni sul disco)
+introduce concetto di puntataore raccolta in tabella
+primo metatadi , ultimo se corrotto&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/file-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/file-system/</guid>
+      <description>&lt;p&gt;struttura logica e fisica
+struttura fisica -&amp;gt; come informazioni sono scritte su memoria fisicamente
+struttura logica -&amp;gt; e il modo in cui informazioni sono organizzate e mostrate ad utente&lt;/p&gt;
+&lt;p&gt;gerarchico
+FAT (file table)
+non contiguo (contiguo = blocchi o cluster blocchi sono consequenziali senza interruzioni sul disco)
+introduce concetto di puntataore raccolta in tabella
+primo metatadi , ultimo se corrotto&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/introduzione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/introduzione/</guid>
+      <description>&lt;p&gt;se un processo entra nello spazio ram vede i dati del altro processo
+7 MACROGRUPPI&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GESTIONE DEI PROCESSI (CREAZIONE , SCHEDULAZIONE , TERMINAZIONE) . supporto multitasking e concorrenza , sicnronizzazione , assegnazione della cpu ai processi scheduler&lt;/li&gt;
+&lt;li&gt;MEMOMRY MANAGMENT (MMU) , tabella di paging , memoria virtuale&lt;/li&gt;
+&lt;li&gt;DEVICE MANAGEMENT (controllo dispositivi Input/Output , cache , intteruzioni , spooling&lt;/li&gt;
+&lt;li&gt;FILE SYSTEM MANAGEMENT&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;RESOURCE ALLOCATION&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SECURITY &amp;amp; PROTECTION&lt;/li&gt;
+&lt;li&gt;USER &amp;amp; PROTECTION&lt;/li&gt;
+&lt;li&gt;USER INTERFACE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;su cosa Basati
+MONOLITICI vs MICROKERNEL
+kernel contiene tutto e condividono stesso spazio esecuzione&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/kernel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/kernel/</guid>
+      <description>&lt;p&gt;si interpone per richieste fatte da utente con hardware
+risposta ritorna in modalita utente&lt;/p&gt;
+&lt;p&gt;CARATERRISTICHE
+gestione processi
+ram
+gestione file system
+verifica identita utenti , permessi&lt;/p&gt;
+&lt;p&gt;MODALITA KERNEL vs MODALITA UTENTE&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/processi-e-thread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sistemi-operativi-e-virtualizzazione/processi-e-thread/</guid>
+      <description>&lt;h3 id=&#34;processso-vs-thread&#34;&gt;PROCESSSO VS THREAD&lt;/h3&gt;
+&lt;p&gt;processo: unita base della locazione delle risorse
+risorse: codice , dati (variabil) , stato di esecuzione , program counter , risorse
+ha suo spazio isolato dedicato&lt;/p&gt;
+&lt;p&gt;Thread (filo esecuzione) piccola unita schedulabile del processo (thread parte del processo)
+viene condivisa codice , dati (variabili) , stato di esecuzione , PC , risorse LI&lt;/p&gt;
+&lt;p&gt;esempio app che spawna processi diversi : Virtual box processo diverso per ogni virtual box&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/virtualizzazione/introduzione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/virtualizzazione/introduzione/</guid>
+      <description>&lt;p&gt;Astrazione sistema operativo , risorsa fisica , applicazione fatta su desktop , hardware che non va a interferire con ecosistema sottostante&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;host&lt;/strong&gt; = fisico
+&lt;strong&gt;virtual Machine manager&lt;/strong&gt; o &lt;strong&gt;Hypervisor&lt;/strong&gt; : crea e esegue macchine
+&lt;strong&gt;guest&lt;/strong&gt; : processo copia virtuale del SO (SO con reletive applicazioni esegue dentro ambiente host)&lt;/p&gt;
+&lt;p&gt;TIPI DI VIRTUALIZZAZIONE
+&lt;strong&gt;HARDWARE&lt;/strong&gt;
+virtualizzazione completa
+emulazione di una CPU su una CPU di tipo diverso (piu lenta)
+&lt;strong&gt;APPLICATIVO&lt;/strong&gt;
+sistemi runtime&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/virtualizzazione/paravirtualizzazione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/virtualizzazione/paravirtualizzazione/</guid>
+      <description>&lt;p&gt;piu SO condividono lo stesso hardware
+Guest consapevoli di essere virtualizzati , posso comunicare direttamente hypervisior di tipo 1 e altri sistemi GUEST (linea diretta con hardware)&lt;/p&gt;
+&lt;p&gt;i kernel dei SO hanno supporto per paravirtualizzazione (cosi se messi )&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/virtualizzazione/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/virtualizzazione/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://kappa710.github.io/prova/posts/virtualizzazione/virtualizzazione-a-livello-di-so/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/virtualizzazione/virtualizzazione-a-livello-di-so/</guid>
+      <description>&lt;p&gt;chiamato partizionamento o container di applicazione
+virtualizzazione a livello Kernel , SO caricato solo a fase uscita&lt;/p&gt;
+&lt;h2 id=&#34;docker&#34;&gt;Docker&lt;/h2&gt;
+&lt;p&gt;docker host : SO su cui gira docker
+docker machine : installare engine su host
+docker engine : permette esecuzione del docker client sul docker host&lt;/p&gt;
+&lt;h2 id=&#34;kubernets&#34;&gt;Kubernets&lt;/h2&gt;
+&lt;p&gt;per gestire container su cluster di macchine , semplifica distribuzione container
+mette a disposizione bilanciamento di carico , errori&lt;/p&gt;
+&lt;p&gt;servizi:
+Kube Scheduler
+proxy : parte networking tra cui load balancing&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AD</title>
+      <link>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/active-directory-autenticazione/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/sicurezza-sistemi-e-reti/active-directory-autenticazione/</guid>
+      <description>come diventare pro in AD</description>
+    </item>
+    <item>
+      <title>Subnetting CHEATSHEETS</title>
+      <link>https://kappa710.github.io/prova/posts/networking/esercizi-subnetting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kappa710.github.io/prova/posts/networking/esercizi-subnetting/</guid>
+      <description>come diventare pro nel subnetting</description>
+    </item>
+  </channel>
+</rss>
