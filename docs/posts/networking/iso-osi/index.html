@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Cyber Noob</title>
+<meta name="keywords" content="">
+<meta name="description" content="cosa succede a data dal alto verso il basso
+aggiunti data : ENCAPSULATION
+cosa succede a data dal basso verso alto
+data strip off  DE-ENCAPSULATION
+cosa fa il Layer 6 e esempio
+il presentation layer transla tra formato applicazione a formato network
+encrypta e decrypa cosi che recevente e trasmettitore capiscono
+cosa fa il Layer 5 ? e cosa controlla ?
+Session layer controlla dialoghi / sessioni fra hosts
+fasi di instaurazione , mantenimento , disconessione">
+<meta name="author" content="">
+<link rel="canonical" href="https://kappa710.github.io/prova/posts/networking/iso-osi/">
+<link crossorigin="anonymous" href="/prova/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://kappa710.github.io/prova/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kappa710.github.io/prova/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kappa710.github.io/prova/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://kappa710.github.io/prova/apple-touch-icon.png">
+<link rel="mask-icon" href="https://kappa710.github.io/prova/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://kappa710.github.io/prova/posts/networking/iso-osi/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://kappa710.github.io/prova/posts/networking/iso-osi/">
+  <meta property="og:site_name" content="Cyber Noob">
+  <meta property="og:title" content="Cyber Noob">
+  <meta property="og:description" content="cosa succede a data dal alto verso il basso aggiunti data : ENCAPSULATION
+cosa succede a data dal basso verso alto data strip off DE-ENCAPSULATION
+cosa fa il Layer 6 e esempio il presentation layer transla tra formato applicazione a formato network encrypta e decrypa cosi che recevente e trasmettitore capiscono
+cosa fa il Layer 5 ? e cosa controlla ? Session layer controlla dialoghi / sessioni fra hosts fasi di instaurazione , mantenimento , disconessione">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="cosa succede a data dal alto verso il basso
+aggiunti data : ENCAPSULATION
+cosa succede a data dal basso verso alto
+data strip off  DE-ENCAPSULATION
+cosa fa il Layer 6 e esempio
+il presentation layer transla tra formato applicazione a formato network
+encrypta e decrypa cosi che recevente e trasmettitore capiscono
+cosa fa il Layer 5 ? e cosa controlla ?
+Session layer controlla dialoghi / sessioni fra hosts
+fasi di instaurazione , mantenimento , disconessione">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://kappa710.github.io/prova/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "https://kappa710.github.io/prova/posts/networking/iso-osi/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "cosa succede a data dal alto verso il basso aggiunti data : ENCAPSULATION\ncosa succede a data dal basso verso alto data strip off DE-ENCAPSULATION\ncosa fa il Layer 6 e esempio il presentation layer transla tra formato applicazione a formato network encrypta e decrypa cosi che recevente e trasmettitore capiscono\ncosa fa il Layer 5 ? e cosa controlla ? Session layer controlla dialoghi / sessioni fra hosts fasi di instaurazione , mantenimento , disconessione\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "cosa succede a data dal alto verso il basso aggiunti data : ENCAPSULATION\ncosa succede a data dal basso verso alto data strip off DE-ENCAPSULATION\ncosa fa il Layer 6 e esempio il presentation layer transla tra formato applicazione a formato network encrypta e decrypa cosi che recevente e trasmettitore capiscono\ncosa fa il Layer 5 ? e cosa controlla ? Session layer controlla dialoghi / sessioni fra hosts fasi di instaurazione , mantenimento , disconessione\ncosa fa il Layer 4 reassembla e frammenta data affichè siano piu facilmente trasmettibile\n**Multiplexing (**permette a più applicazioni di usare la stessa connessione contemporaneamente, ****evitando di sprecare risorse) e Demultiplexing ( Smista i dati ricevuti (da un’unica connessione) all’applicazione corretta usando i numeri di porta, evitando che i dati finiscano all’applicazione sbagliata e permettendo a più applicazioni di condividere la stessa connessione.)\nConnection Management (establishing)\nFlow Control (Buffering / Windowing) : regola trasmissione paccheti\nReliable Transport\ndifferenza buffer e windows size buffer memoria fisica / promessa di memoria da occupare\ncosa fa il buffering ? Assicurarsi che il destinatario abbia abbastanza spazio di memoria (buffer) per ricevere i dati senza problemi.\ncosa fa il windowing? Il mittente si adatta alla velocità del destinatario in base a quanto velocemente il destinatario riceve i dati in modo affidabile.\ncosa fa il layer 3? Collega end host in reti differenti Path Selection Assegna indirizzi logici\ncosa fa il layer 2? fornisce connettività nodo su nodo definisce come data è formattata per trasmissione su mezzo fisico trova e corregge errori nel layer fisico\ncosa è MAC ADDRESS e numero bit? MEDIA ACCESS CONTROLLER identificatore univoco della scheda di rete , formato da 48bit\ncosa fa LLC ?Logical Link Controller , interfaccia tra layer 2 e layer 3 ",
+  "wordCount" : "290",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kappa710.github.io/prova/posts/networking/iso-osi/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cyber Noob",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kappa710.github.io/prova/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://kappa710.github.io/prova/" accesskey="h" title="Cyber Noob (Alt + H)">Cyber Noob</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://kappa710.github.io/prova/archives" title="archivio">
+                    <span>archivio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kappa710.github.io/prova/categories/" title="categorie">
+                    <span>categorie</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kappa710.github.io/prova/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h5 id="cosa-succede-a-data-dal-alto-verso-il-basso">cosa succede a data dal alto verso il basso<a hidden class="anchor" aria-hidden="true" href="#cosa-succede-a-data-dal-alto-verso-il-basso">#</a></h5>
+<p>aggiunti data : ENCAPSULATION</p>
+<h5 id="cosa-succede-a-data-dal-basso-verso-alto">cosa succede a data dal basso verso alto<a hidden class="anchor" aria-hidden="true" href="#cosa-succede-a-data-dal-basso-verso-alto">#</a></h5>
+<p>data strip off  DE-ENCAPSULATION</p>
+<h5 id="cosa-fa-il-layer-6-e-esempio">cosa fa il Layer 6 e esempio<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-il-layer-6-e-esempio">#</a></h5>
+<p>il presentation layer transla tra formato applicazione a formato network
+encrypta e decrypa cosi che recevente e trasmettitore capiscono</p>
+<h5 id="cosa-fa-il-layer-5--e-cosa-controlla-">cosa fa il Layer 5 ? e cosa controlla ?<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-il-layer-5--e-cosa-controlla-">#</a></h5>
+<p>Session layer controlla dialoghi / sessioni fra hosts
+fasi di instaurazione , mantenimento , disconessione</p>
+<h5 id="cosa-fa-il-layer-4">cosa fa il Layer 4<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-il-layer-4">#</a></h5>
+<p>reassembla e frammenta data affichè siano piu facilmente trasmettibile</p>
+<p>**Multiplexing (**permette a più applicazioni di usare la stessa connessione contemporaneamente, ****evitando di sprecare risorse) e <strong>Demultiplexing</strong> ( Smista i dati ricevuti (da un&rsquo;unica connessione) all&rsquo;applicazione corretta usando i numeri di porta, evitando che i dati finiscano all&rsquo;applicazione sbagliata e permettendo a più applicazioni di condividere la stessa connessione.)</p>
+<p><strong>Connection Management</strong> (establishing)</p>
+<p><strong>Flow Control (Buffering / Windowing) :</strong> regola trasmissione paccheti</p>
+<p><strong>Reliable Transport</strong></p>
+<h5 id="differenza-buffer-e-windows-size">differenza buffer e windows size<a hidden class="anchor" aria-hidden="true" href="#differenza-buffer-e-windows-size">#</a></h5>
+<p>buffer memoria fisica / promessa di memoria da occupare</p>
+<h5 id="cosa-fa-il-buffering-">cosa fa il buffering ?<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-il-buffering-">#</a></h5>
+<p>Assicurarsi che il destinatario abbia abbastanza spazio di memoria (buffer) per ricevere i dati senza problemi.</p>
+<h5 id="cosa-fa-il-windowing">cosa fa il windowing?<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-il-windowing">#</a></h5>
+<p>Il mittente si adatta alla velocità del destinatario in base a quanto velocemente il destinatario riceve i dati in modo affidabile.</p>
+<h5 id="cosa-fa-il-layer-3">cosa fa il layer 3?<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-il-layer-3">#</a></h5>
+<p>Collega end host in reti differenti
+Path Selection
+Assegna indirizzi logici</p>
+<h5 id="cosa-fa-il-layer-2">cosa fa il layer 2?<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-il-layer-2">#</a></h5>
+<p>fornisce connettività nodo su nodo
+definisce come data è formattata per trasmissione su mezzo fisico
+trova e corregge errori nel layer fisico</p>
+<h6 id="cosa-è-mac-address-e-numero-bit">cosa è MAC ADDRESS e numero bit?<a hidden class="anchor" aria-hidden="true" href="#cosa-è-mac-address-e-numero-bit">#</a></h6>
+<p>MEDIA ACCESS CONTROLLER identificatore univoco della scheda di rete , formato da 48bit</p>
+<h6 id="cosa-fa-llc-logical-link-controller--interfaccia-tra-layer-2-e-layer-3">cosa fa LLC ?Logical Link Controller , interfaccia tra layer 2 e layer 3<a hidden class="anchor" aria-hidden="true" href="#cosa-fa-llc-logical-link-controller--interfaccia-tra-layer-2-e-layer-3">#</a></h6>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://kappa710.github.io/prova/">Cyber Noob</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

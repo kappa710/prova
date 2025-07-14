@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Cyber Noob</title>
+<meta name="keywords" content="">
+<meta name="description" content="per cosa sta CLI ?
+Command Line Interface
+con che tipo cavo mi connetto a router / switch Cisco
+Rollover cable
+come mi connetto da pc a  CLI del router/switch
+PuTTy
+cofigurazione PuTTy
+IMMAGINE
+MODALITA
+quali sono le 3 modalità in dispositivo CISCO
+USER , ROOT . CONFIG
+con che comando passare da USER  a ROOT
+enable
+da ROOT a CONFIG
+configure terminal
+da CONFIG a ROOT
+exit
+eseguire comandi in modalità enable da altre modalità
+do {comando}">
+<meta name="author" content="">
+<link rel="canonical" href="https://kappa710.github.io/prova/posts/networking/cli/">
+<link crossorigin="anonymous" href="/prova/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://kappa710.github.io/prova/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kappa710.github.io/prova/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kappa710.github.io/prova/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://kappa710.github.io/prova/apple-touch-icon.png">
+<link rel="mask-icon" href="https://kappa710.github.io/prova/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://kappa710.github.io/prova/posts/networking/cli/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://kappa710.github.io/prova/posts/networking/cli/">
+  <meta property="og:site_name" content="Cyber Noob">
+  <meta property="og:title" content="Cyber Noob">
+  <meta property="og:description" content="per cosa sta CLI ? Command Line Interface
+con che tipo cavo mi connetto a router / switch Cisco Rollover cable
+come mi connetto da pc a CLI del router/switch PuTTy
+cofigurazione PuTTy IMMAGINE
+MODALITA quali sono le 3 modalità in dispositivo CISCO USER , ROOT . CONFIG
+con che comando passare da USER a ROOT enable
+da ROOT a CONFIG configure terminal
+da CONFIG a ROOT exit
+eseguire comandi in modalità enable da altre modalità do {comando}">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="per cosa sta CLI ?
+Command Line Interface
+con che tipo cavo mi connetto a router / switch Cisco
+Rollover cable
+come mi connetto da pc a  CLI del router/switch
+PuTTy
+cofigurazione PuTTy
+IMMAGINE
+MODALITA
+quali sono le 3 modalità in dispositivo CISCO
+USER , ROOT . CONFIG
+con che comando passare da USER  a ROOT
+enable
+da ROOT a CONFIG
+configure terminal
+da CONFIG a ROOT
+exit
+eseguire comandi in modalità enable da altre modalità
+do {comando}">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://kappa710.github.io/prova/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "https://kappa710.github.io/prova/posts/networking/cli/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "per cosa sta CLI ? Command Line Interface\ncon che tipo cavo mi connetto a router / switch Cisco Rollover cable\ncome mi connetto da pc a CLI del router/switch PuTTy\ncofigurazione PuTTy IMMAGINE\nMODALITA quali sono le 3 modalità in dispositivo CISCO USER , ROOT . CONFIG\ncon che comando passare da USER a ROOT enable\nda ROOT a CONFIG configure terminal\nda CONFIG a ROOT exit\neseguire comandi in modalità enable da altre modalità do {comando}\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "per cosa sta CLI ? Command Line Interface\ncon che tipo cavo mi connetto a router / switch Cisco Rollover cable\ncome mi connetto da pc a CLI del router/switch PuTTy\ncofigurazione PuTTy IMMAGINE\nMODALITA quali sono le 3 modalità in dispositivo CISCO USER , ROOT . CONFIG\ncon che comando passare da USER a ROOT enable\nda ROOT a CONFIG configure terminal\nda CONFIG a ROOT exit\neseguire comandi in modalità enable da altre modalità do {comando}\nquale comando di solito faccio in enable e non altre modalità? show\nCOMANDI cambiare hostname? hostname {nome} aggiungere password enable password {password}\nrendi password encrpytata service password-encrpytion\ndifferenza password e secret secret : password criptografia piu forte\ncome aggiungere secret enable secret {secret}\nCONFIGURAZIONI differenza running-config e startup-config solo su RAM , si perde a riavvio …….. vs config che si avrà al riavvio\ncomando per passare da running-config a startup-config copy running-config starting-config\nROUTER per attivare rete di un router vai in configure terminal → interface Gi0/0/0 → ip address {ip router = ip gateway} {subnetmask} → no shutdown ( attiva solo questa interfaccia )\nmostrare interfacce ? show ip interface brief\nROUTING RICORDATI che per PING deve andare pacchetto sia andata sia ritorno\nROUTING STATICO come si fa routing statico\nvai in configure terminal → ip route {IP NETWORK che vuoi RAGGIUNGERE (attento IP NETWORK)} {SUBNETMASK} {IP AL GATEWAY DEL NETWORK CHE VUOI RAGGIUNGERE}\ncome controllare routing\nshow ip route\nROUTING DINAMICO\ncome si fa\nrouter ospf 1\nnetwork {network} {wildcard} area {}\nnetwork lo devi fare per ogni network che router ha ( e anche per network che vede staticamente)\ncosa opzionale\nlog…\nle 2 cose tricky\nricordati del 1 e wildcard mask si usa\n",
+  "wordCount" : "286",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kappa710.github.io/prova/posts/networking/cli/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cyber Noob",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kappa710.github.io/prova/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://kappa710.github.io/prova/" accesskey="h" title="Cyber Noob (Alt + H)">Cyber Noob</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://kappa710.github.io/prova/archives" title="archivio">
+                    <span>archivio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kappa710.github.io/prova/categories/" title="categorie">
+                    <span>categorie</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://kappa710.github.io/prova/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h6 id="per-cosa-sta-cli-">per cosa sta CLI ?<a hidden class="anchor" aria-hidden="true" href="#per-cosa-sta-cli-">#</a></h6>
+<p>Command Line Interface</p>
+<h6 id="con-che-tipo-cavo-mi-connetto-a-router--switch-cisco">con che tipo cavo mi connetto a router / switch Cisco<a hidden class="anchor" aria-hidden="true" href="#con-che-tipo-cavo-mi-connetto-a-router--switch-cisco">#</a></h6>
+<p>Rollover cable</p>
+<h6 id="come-mi-connetto-da-pc-a--cli-del-routerswitch">come mi connetto da pc a  CLI del router/switch<a hidden class="anchor" aria-hidden="true" href="#come-mi-connetto-da-pc-a--cli-del-routerswitch">#</a></h6>
+<p>PuTTy</p>
+<h6 id="cofigurazione-putty">cofigurazione PuTTy<a hidden class="anchor" aria-hidden="true" href="#cofigurazione-putty">#</a></h6>
+<p>IMMAGINE</p>
+<h2 id="modalita">MODALITA<a hidden class="anchor" aria-hidden="true" href="#modalita">#</a></h2>
+<h6 id="quali-sono-le-3-modalità-in-dispositivo-cisco">quali sono le 3 modalità in dispositivo CISCO<a hidden class="anchor" aria-hidden="true" href="#quali-sono-le-3-modalità-in-dispositivo-cisco">#</a></h6>
+<p>USER , ROOT . CONFIG</p>
+<h6 id="con-che-comando-passare-da-user--a-root">con che comando passare da USER  a ROOT<a hidden class="anchor" aria-hidden="true" href="#con-che-comando-passare-da-user--a-root">#</a></h6>
+<p>enable</p>
+<h6 id="da-root-a-config">da ROOT a CONFIG<a hidden class="anchor" aria-hidden="true" href="#da-root-a-config">#</a></h6>
+<p>configure terminal</p>
+<h6 id="da-config-a-root">da CONFIG a ROOT<a hidden class="anchor" aria-hidden="true" href="#da-config-a-root">#</a></h6>
+<p>exit</p>
+<h6 id="eseguire-comandi-in-modalità-enable-da-altre-modalità">eseguire comandi in modalità enable da altre modalità<a hidden class="anchor" aria-hidden="true" href="#eseguire-comandi-in-modalità-enable-da-altre-modalità">#</a></h6>
+<p>do {comando}</p>
+<h6 id="quale-comando-di-solito-faccio-in-enable-e-non-altre-modalità">quale comando di solito faccio in enable e non altre modalità?<a hidden class="anchor" aria-hidden="true" href="#quale-comando-di-solito-faccio-in-enable-e-non-altre-modalità">#</a></h6>
+<p>show</p>
+<h3 id="comandi">COMANDI<a hidden class="anchor" aria-hidden="true" href="#comandi">#</a></h3>
+<h6 id="cambiare-hostname">cambiare hostname?<a hidden class="anchor" aria-hidden="true" href="#cambiare-hostname">#</a></h6>
+<pre><code>hostname {nome}
+</code></pre>
+<h6 id="aggiungere-password">aggiungere password<a hidden class="anchor" aria-hidden="true" href="#aggiungere-password">#</a></h6>
+<p>enable password {password}</p>
+<h6 id="rendi-password-encrpytata">rendi password encrpytata<a hidden class="anchor" aria-hidden="true" href="#rendi-password-encrpytata">#</a></h6>
+<p>service password-encrpytion</p>
+<h6 id="differenza-password-e-secret">differenza password e secret<a hidden class="anchor" aria-hidden="true" href="#differenza-password-e-secret">#</a></h6>
+<p>secret : password criptografia piu forte</p>
+<h6 id="come-aggiungere-secret">come aggiungere secret<a hidden class="anchor" aria-hidden="true" href="#come-aggiungere-secret">#</a></h6>
+<p>enable secret {secret}</p>
+<h3 id="configurazioni">CONFIGURAZIONI<a hidden class="anchor" aria-hidden="true" href="#configurazioni">#</a></h3>
+<h6 id="differenza-running-config-e-startup-config">differenza running-config e startup-config<a hidden class="anchor" aria-hidden="true" href="#differenza-running-config-e-startup-config">#</a></h6>
+<p>solo su RAM , si perde a riavvio …….. vs config che si avrà al riavvio</p>
+<h6 id="comando-per-passare-da-running-config-a-startup-config">comando per passare da running-config a startup-config<a hidden class="anchor" aria-hidden="true" href="#comando-per-passare-da-running-config-a-startup-config">#</a></h6>
+<p>copy running-config starting-config</p>
+<h2 id="router">ROUTER<a hidden class="anchor" aria-hidden="true" href="#router">#</a></h2>
+<h6 id="per-attivare-rete-di-un-router">per attivare rete di un router<a hidden class="anchor" aria-hidden="true" href="#per-attivare-rete-di-un-router">#</a></h6>
+<p>vai in <code>configure terminal</code> → <code>interface Gi0/0/0 </code>→<code> ip address {ip router = ip gateway} {subnetmask}</code> → <code>no shutdown</code> ( attiva solo questa interfaccia )</p>
+<h6 id="mostrare-interfacce-">mostrare interfacce ?<a hidden class="anchor" aria-hidden="true" href="#mostrare-interfacce-">#</a></h6>
+<p>show ip interface brief</p>
+<h2 id="routing">ROUTING<a hidden class="anchor" aria-hidden="true" href="#routing">#</a></h2>
+<p>RICORDATI che per PING deve andare pacchetto sia andata sia ritorno</p>
+<h3 id="routing-statico">ROUTING STATICO<a hidden class="anchor" aria-hidden="true" href="#routing-statico">#</a></h3>
+<ul>
+<li>
+<p>come si fa routing statico</p>
+<p>vai in configure terminal → ip route {IP NETWORK che vuoi RAGGIUNGERE (attento IP NETWORK)} {SUBNETMASK} {IP AL GATEWAY DEL NETWORK CHE VUOI RAGGIUNGERE}</p>
+</li>
+<li>
+<p>come controllare routing</p>
+<p>show ip route</p>
+</li>
+</ul>
+<p><strong>ROUTING DINAMICO</strong></p>
+<ul>
+<li>
+<p>come si fa</p>
+<p>router ospf 1</p>
+<p>network {network} {wildcard} area {}</p>
+<p>network lo devi fare per ogni network che router ha (  e anche per network che vede staticamente)</p>
+</li>
+<li>
+<p>cosa opzionale</p>
+<p>log…</p>
+</li>
+<li>
+<p>le 2 cose tricky</p>
+<p>ricordati del 1 e wildcard mask si usa</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://kappa710.github.io/prova/">Cyber Noob</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
